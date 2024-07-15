@@ -123,3 +123,14 @@ body {
   background-color: rgb(213, 192, 0);
   padding: calc(1rem - 4px);
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    border: 1.25rem solid yellow;
+    flex-direction: column;
+  }
+
+  body {
+    background-color: rgb(124, 124, 124);
+  }
+}
