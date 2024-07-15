@@ -1,0 +1,125 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  overflow: hidden;
+  margin: 32px;
+  padding: 0;
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  border: 1.25rem solid rgb(19, 19, 19);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(1rem + 12px);
+  background-color: rgb(48, 55, 72);
+  padding: calc(1rem + 4px);
+  border-bottom: 0.6rem solid rgb(19, 19, 19);
+}
+
+.nav-item {
+  background-color: rgb(244, 87, 87);
+  padding: calc(1rem - 4px);
+}
+
+.nav-item:first-child {
+  flex: 1;
+}
+
+.nav-item:nth-child(2) {
+  flex: 4;
+}
+
+.nav-item:last-child {
+  flex: 1;
+}
+
+.banner {
+  background-color: rgb(233, 142, 51);
+  padding: 1rem;
+}
+
+.banner > div {
+  background-color: yellow;
+  padding: calc(1rem - 4px);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  border: 1.25rem solid rgb(19, 19, 19);
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: rgb(65, 72, 107);
+  padding: calc(1rem + 4px);
+  gap: calc(1rem + 4px);
+}
+
+.content-left-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: calc(1rem + 4px);
+}
+
+.column1,
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: calc(1rem + 4px);
+}
+
+.column1 > div,
+.column2 > div {
+  flex: auto;
+  padding: calc(1rem - 4px);
+  background-color: blue;
+}
+
+.content-left-wide {
+  flex: auto;
+  padding: calc(1rem - 4px);
+  background-color: rgb(143, 199, 255);
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 1rem;
+  background-color: rgb(236, 43, 43);
+  padding: calc(1rem + 4px);
+}
+
+.content-right-item {
+  padding: calc(1rem - 4px);
+  background-color: rgb(253, 253, 129);
+}
+
+.footer {
+  border: 1.25rem solid rgb(19, 19, 19);
+}
+
+.footer > div {
+  background-color: rgb(213, 192, 0);
+  padding: calc(1rem - 4px);
+}
