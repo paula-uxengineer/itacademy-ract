@@ -134,3 +134,38 @@ body {
     background-color: rgb(124, 124, 124);
   }
 }
+
+@media screen and (min-width: 769px) {
+  body {
+    background-color: rgb(211, 211, 211);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: rgb(42, 42, 42);
+  }
+
+  .main {
+    border: 1.25rem solid purple;
+  }
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .nav-item:first-child {
+    transition: transform 0.5s;
+  }
+
+  .nav-item:first-child:hover {
+    animation-name: bounceColor;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  .content-left-wrap {
+    flex-direction: column;
+  }
+}
